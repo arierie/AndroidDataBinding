@@ -11,7 +11,8 @@ import id.arieridwan.androiddatabinding.databinding.ActivityDetailBinding;
 import id.arieridwan.androiddatabinding.viewmodels.DetailActivityVM;
 
 public class DetailActivity extends AppCompatActivity {
-    // inisialisasi argumen untuk memulai activity
+
+    // deklarasi variable sebagai argumen untuk memulai activity
     public static final String ARG_JUDUL = "key_judul";
     public static final String ARG_PENGARANG = "key_pengarang";
 
