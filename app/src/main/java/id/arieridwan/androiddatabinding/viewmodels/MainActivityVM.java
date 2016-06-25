@@ -13,10 +13,16 @@ public class MainActivityVM {
     // inisialisasi variable
     public ObservableField<String> bTextInputJudul = new ObservableField<>();
     public ObservableField<String> bTextInputNama = new ObservableField<>();
-    public MainActivity mActivity = new MainActivity();
+    public MainActivity mActivity;
+
+    // constructor untuk mendapatkan context yang dikirim dari activity
+    public MainActivityVM(MainActivity mainActivity) {
+        this.mActivity = mainActivity;
+    }
 
     // method ketika button diklik
-    public void onClickSubmit(View view) {
+    public void onClickSubmit(View v) {
         DetailActivity.startThisActivity(mActivity, bTextInputJudul.get(), bTextInputNama.get());
     }
+
 }
